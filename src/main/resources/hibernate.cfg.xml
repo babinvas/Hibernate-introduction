@@ -1,7 +1,9 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE hibernate-configuration SYSTEM
-"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
+
     <session-factory>
 
         <property name = "hibernate.dialect">
@@ -16,5 +18,9 @@
             jdbc:mysql://localhost/test
         </property>
 
+        <!-- List of XML mapping files -->
+        <mapping resource="Employee.hbm.xml" />
+
     </session-factory>
+
 </hibernate-configuration>
