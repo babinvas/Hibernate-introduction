@@ -1,4 +1,4 @@
-package babinvas;
+package babinvas.repository;
 
 public class Employee {
 	private int id;
