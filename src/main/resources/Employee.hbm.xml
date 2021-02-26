@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
 
-    <class name = "Employee" table= "Employee">
+    <class name = "babinvas.repository.Employee" table= "Employee">
         <meta attribute = "class-description">
             The Employee class has the employee details.
         </meta>
