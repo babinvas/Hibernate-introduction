@@ -25,6 +25,8 @@ public class EmployeeManager {
 
 			List employees = session.createQuery("from Employee").list();
 
+			System.out.println();
+
 			for (int i = employees.size() - 1; i >= 0; i--) {
 				Employee employee = (Employee) employees.get(i);
 
@@ -32,6 +34,8 @@ public class EmployeeManager {
 						"\t" + "Last Name: " + employee.getLastName() +
 						"\t" + "Salary: " + employee.getSalary());
 			}
+
+			System.out.println();
 		} catch(HibernateException e) {
 			if (transaction != null) {
 				transaction.rollback();
